@@ -7,11 +7,12 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        value: ''
-      }
+    export default {
+        data() {
+            return {
+                value: '',
+                telephone: ''
+            }
+        }
     }
-  }
 </script>

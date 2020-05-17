@@ -19,10 +19,14 @@ import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import counter  from "./components/counter.vue";
 import calendar from "./components/datepicker.vue";
+import TodoApp from "./components/App.vue";
+import VueMask from 'v-mask'
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+Vue.use(VueMask);
+
 new Vue({
-    render: h => h(calendar)
-}).$mount("#hello")
+    render: h => h(TodoApp)
+}).$mount("#calendar")
