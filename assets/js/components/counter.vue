@@ -1,6 +1,6 @@
 // Define a new component called button-counter
 <template>
-    <button v-on:click="count++">You clicked me {{ count }} times.</button>
+    <button class="btn btn-primary" v-on:click="count++">You clicked me {{ count }} times.</button>
 </template>
 
 <script>

@@ -16,7 +16,13 @@ import "phoenix_html"
 // Local files can be imported directly using relative paths, for example:
 // import socket from "./socket"
 import Vue from "vue";
-import counter from "./components/counter.vue";
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import counter  from "./components/counter.vue";
+import calendar from "./components/datepicker.vue";
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
 new Vue({
-    render: h => h(counter)
+    render: h => h(calendar)
 }).$mount("#hello")
