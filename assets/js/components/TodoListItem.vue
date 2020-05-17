@@ -1,10 +1,10 @@
 <template>
-  <li>
-    {{ todo.text }}
-    <button @click="$emit('remove', todo.id)">
-      X
-    </button>
-  </li>
+  <tr>
+      <th scope="row"><button class="btn btn-danger" @click="$emit('remove', todo.id)">X</button></th>
+      <td>{{ todo.text }}</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+  </tr>  
 </template>
 
 <script>

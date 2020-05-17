@@ -1,8 +1,8 @@
 <template>
-	<div id="app">
-		<h1>My Todo App!</h1>
+  <div id="app" class="jumbotron">
+    	<h1>My Todo App!</h1>
 		<TodoList/>
-	</div>
+  </div>
 </template>
 
 <script>

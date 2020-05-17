@@ -5,17 +5,27 @@
 			placeholder="New todo"
 			@keydown.enter="addTodo"
 		/>
-		<ul v-if="todos.length">
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Action</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody v-if="todos.length">
 			<TodoListItem
 				v-for="todo in todos"
 				:key="todo.id"
 				:todo="todo"
 				@remove="removeTodo"
 			/>
-		</ul>
-		<p v-else>
+        </tbody>
+        <p v-else>
 			Nothing left in the list. Add a new todo in the input above.
 		</p>
+        </table>                       
 	</div>
 </template>
 
